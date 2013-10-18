@@ -1,0 +1,29 @@
+[Eagle]
+Version="06 02 00"
+Platform="Mac OS X"
+Serial="62191E841E-LSR-WLM-1EL"
+Globals="Globals"
+Desktop="Desktop"
+
+[Globals]
+AutoSaveProject=1
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/SparkFun-Passives.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/SparkFun.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/allegro.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/atmel.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/crystal.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/discrete.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/frames.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/smd-ipc.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/smd-special.lbr"
+UsedLibrary="/Applications/EAGLE-6.2.0/lbr/st-microelectronics.lbr"
+
+[Win_1]
+Type="Control Panel"
+Loc="320 218 919 617"
+State=2
+Number=0
+
+[Desktop]
+Screen="1280 800"
+Window="Win_1"
