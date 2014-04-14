@@ -11,6 +11,8 @@ set(ARDUINO_DEFAULT_PORT /dev/ttyUSB0) # Default Port, when not specified
 
 project(Scorpion C CXX)
 
-generate_arduino_firmware(scorpion
-    SRCS main.cpp
-    BOARD uno)
+set(scorpion_SRCS  main.cpp)
+# set(scorpion_HDRS  main.h)
+set(scorpion_BOARD uno)
+
+generate_arduino_firmware(scorpion)
