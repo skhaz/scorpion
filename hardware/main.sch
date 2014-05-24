@@ -4316,6 +4316,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND12" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND13" library="SparkFun" deviceset="GND" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="U$8" library="SparkFun" deviceset="5V" device=""/>
+<part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4330,7 +4333,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="C2" gate="G$1" x="-185.42" y="160.02"/>
 <instance part="C3" gate="G$1" x="-170.18" y="162.56"/>
 <instance part="GND1" gate="1" x="-177.8" y="152.4"/>
-<instance part="U$2" gate="G$1" x="-152.4" y="198.12"/>
+<instance part="U$2" gate="G$1" x="-152.4" y="203.2"/>
 <instance part="GND3" gate="1" x="-152.4" y="104.14"/>
 <instance part="U$3" gate="G$1" x="-203.2" y="76.2"/>
 <instance part="GND4" gate="1" x="-193.04" y="60.96"/>
@@ -4382,7 +4385,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="R20" gate="G$1" x="127" y="35.56" rot="R180"/>
 <instance part="R21" gate="G$1" x="127" y="30.48" rot="R180"/>
 <instance part="XB2" gate="G$1" x="-129.54" y="48.26" rot="MR0"/>
-<instance part="U1" gate="G$1" x="22.86" y="170.18"/>
+<instance part="U1" gate="G$1" x="-35.56" y="180.34"/>
 <instance part="LM3940(SOT223)" gate="G$1" x="-182.88" y="-27.94"/>
 <instance part="IC1" gate="A1" x="-226.06" y="-30.48"/>
 <instance part="P+6" gate="1" x="-243.84" y="-25.4"/>
@@ -4391,6 +4394,9 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <instance part="+3V1" gate="G$1" x="-147.32" y="-22.86"/>
 <instance part="GND12" gate="1" x="-226.06" y="-53.34"/>
 <instance part="GND13" gate="1" x="-170.18" y="-53.34"/>
+<instance part="+3V2" gate="G$1" x="-38.1" y="205.74"/>
+<instance part="U$8" gate="G$1" x="-33.02" y="203.2"/>
+<instance part="GND14" gate="1" x="-35.56" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -4580,6 +4586,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="IC1" gate="A1" pin="GND"/>
 <wire x1="-226.06" y1="-50.8" x2="-226.06" y2="-38.1" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="-35.56" y1="154.94" x2="-35.56" y2="157.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -4670,7 +4681,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <pinref part="IC3" gate="G$1" pin="VCC@1"/>
 <wire x1="-149.86" y1="193.04" x2="-152.4" y2="193.04" width="0.1524" layer="91"/>
 <wire x1="-152.4" y1="193.04" x2="-152.4" y2="195.58" width="0.1524" layer="91"/>
-<wire x1="-152.4" y1="195.58" x2="-152.4" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="195.58" x2="-152.4" y2="203.2" width="0.1524" layer="91"/>
 <junction x="-152.4" y="195.58"/>
 <pinref part="U$2" gate="G$1" pin="5V"/>
 <wire x1="-152.4" y1="193.04" x2="-152.4" y2="190.5" width="0.1524" layer="91"/>
@@ -4699,6 +4710,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="-215.9" y1="-30.48" x2="-208.28" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U$7" gate="G$1" pin="5V"/>
 <wire x1="-208.28" y1="-30.48" x2="-208.28" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="5V"/>
+<pinref part="U1" gate="G$1" pin="VCCB"/>
+<wire x1="-33.02" y1="203.2" x2="-33.02" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -5096,6 +5112,11 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="-154.94" y1="-30.48" x2="-147.32" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="-147.32" y1="-30.48" x2="-147.32" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+<pinref part="U1" gate="G$1" pin="VCCA"/>
+<wire x1="-38.1" y1="203.2" x2="-38.1" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
